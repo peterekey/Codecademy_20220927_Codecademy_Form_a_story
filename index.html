@@ -19,37 +19,37 @@
           
           <section id="animal-1">
             <label for="animal-1">Animal:</label>
-            <input name="animal-1" id="animal-1" type="text" required>
+            <input name="animal-1" id="animal-1" type="text" required autofocus placeholder="e.g. capybara">
             <br>
           </section>
           
           <section id="animal-2">
             <label for="animal-2">Another animal:</label>
-            <input name="animal-2" id="animal-2" type="text" required>
+            <input name="animal-2" id="animal-2" type="text" required value="gorilla">
             <br>
           </section>
 
           <section id="animal-3">
             <label for="animal-3">One more animal:</label>
-            <input id="animal-3" name="animal-3" type="text" required>
+            <input id="animal-3" name="animal-3" type="text" required value="goat">
             <br>
           </section>
 
           <section id="adj-1">
             <label for="adj-1">Adjective (past tense):</label>
-            <input id="adj-1" name="adj-1" type="text" required>
+            <input id="adj-1" name="adj-1" type="text" required value="delighted" pattern="[a-zA-Z]+ed">
             <br>
           </section>
 
           <section id="verb-1">
             <label for="verb-1">Verb (ends in -ing):</label>
-            <input id="verb-1" name="verb-1" type="text" required>
+            <input id="verb-1" name="verb-1" type="text" required value="painting" pattern="[a-zA-Z]+ing">
             <br>
           </section>
 
           <section id="num-1">
             <label for="num-1">Number:</label>
-            <input id="num-1" name="num-1" type="number" required>
+            <input id="num-1" name="num-1" type="number" required value="359" min="1" max="1000">
             <br>
           </section>
 
@@ -57,7 +57,7 @@
             <span>Yes or no:</span>
             <input id="yes" type="radio" name="answer" value="yes" required>
             <label for="yes">Yes</label>
-            <input id="no" type="radio" name="answer" value="no">
+            <input id="no" type="radio" name="answer" value="no" checked>
             <label for="no">No</label>
             <br>
           </section>
@@ -67,14 +67,14 @@
             <select id="speed" name="speed" required>
               <option value="faster">Faster</option>
               <option value="speedier">Speedier</option>
-              <option value="slower">Slower</option>
+              <option value="slower" selected>Slower</option>
             </select>
             <br>
           </section>
 
           <section id="quote">
             <label for="quote">Motivational quote:</label>
-            <input id="quote" name="quote" type="text" list="quote-choices" required>
+            <input id="quote" name="quote" type="text" list="quote-choices" required  value="loser cleans the toilet for a year">
             <datalist id="quote-choices">
               <option value="winner get ice cream!"></option>
               <option value="loser cleans the toilet for a year"></option>
@@ -84,7 +84,7 @@
 
           <section id="message">
             <label for="message">Meaningful message:</label>
-            <textarea id="message" required cols="40" rows="8"></textarea>
+            <textarea name="message" id="message" required cols="40" rows="8">You miss 100% of the shots you don't take</textarea>
           </section>
 
           <section class="submission">
